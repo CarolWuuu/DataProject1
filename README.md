@@ -9,12 +9,14 @@ The pipeline supports data conversion between CSV, JSON, and SQlite3 Database ta
 The pipeline merges lists for hardcover and ebook to perform downstream analysis. Analysis results is describe below: 
 
 Rank Change Trends:
+
 E-Book Fiction has a larger average rank drop (-6.53) compared to Hardcover Fiction (-2.33).
 - This suggests that E-Book Fiction bestsellers fluctuate more in rankings.
 The biggest rank drop in E-Book Fiction was -15, while in Hardcover Fiction, it was -13.
 - This indicates that E-Books tend to be more volatile than Hardcovers.
 
 Weeks on the Bestseller List:
+
 E-Book Fiction books stay on the list for a much shorter period, with an average of 2.67 weeks and a maximum of 12 weeks.
 - This suggests that E-Books have a shorter lifecycle on the bestseller list.
 Hardcover Fiction books remain much longer, with an average of 26.73 weeks and a maximum of 86 weeks.
