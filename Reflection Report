@@ -1,0 +1,31 @@
+Challenges Encountered During Implementation
+During the implementation of the ETL pipeline for processing NYT Bestseller Data, several challenges arose:
+
+1. API Limitations & Connectivity Issues
+
+- The NYT API sometimes failed due to network issues or API rate limits.
+- Ensuring the API key was valid and properly authenticated was necessary for stable data retrieval.
+
+2. Handling Data Inconsistencies
+
+- Some JSON responses lacked certain expected fields (e.g., missing rank_last_week values).
+- Ensuring the script handled missing data gracefully without breaking the transformation process was a key challenge.
+
+3. Data Merging Complexity
+
+- Merging E-Book and Hardcover Fiction datasets required adding a list_category column to differentiate the two.
+- Since ranking from two lists overlaps, additional id column is required for storing merged_records in sql databased as the primary key.
+- Using DROP TABLE IF EXISTS helped reset the table properly when re-ingesting data.
+
+Aspects That Were Easier Than Expected
+1. Fetching and Storing Data
+- Once the API response format was understood, converting it into a structured DataFrame was straightforward using Pandas.
+- Writing data to SQLite with to_sql() and using JSON/CSV conversions worked smoothly.
+
+2. Generating Summary Reports
+- Extracting summary statistics (number of records, columns, mean/min/max values) was easily done using Pandas agg() and describe() functions.
+
+3. Data Visualization
+- Matplotlib & Pandas built-in plotting made it easy to generate insights like Rank Change Trends and Weeks on List Distributions.
+
+Overall, this ETL pipeline was a valuable experience in working with APIs, transforming data, and analyzing trends. The most challenging part was handling data inconsistencies and merging datasets effectively, while the most rewarding aspect was visualizing trends and seeing meaningful insights emerge from the processed data.
