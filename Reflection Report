@@ -28,4 +28,6 @@ Aspects That Were Easier Than Expected
 3. Data Visualization
 - Matplotlib & Pandas built-in plotting made it easy to generate insights like Rank Change Trends and Weeks on List Distributions.
 
-Overall, this ETL pipeline was a valuable experience in working with APIs, transforming data, and analyzing trends. The most challenging part was handling data inconsistencies and merging datasets effectively, while the most rewarding aspect was visualizing trends and seeing meaningful insights emerge from the processed data.
+Overall, this ETL pipeline was a valuable experience in working with APIs, transforming data, and analyzing trends. 
+The most challenging part was handling data inconsistencies and merging datasets effectively, 
+while the most rewarding aspect was visualizing trends and seeing meaningful insights emerge from the processed data.
